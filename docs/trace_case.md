@@ -15,7 +15,7 @@ python -m lab9.trace_case --shape fixed --claim C-002 --seed 55   # đối chứ
 
 | Trường                    | Nội dung                                                                                                                                            |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Trial                     | `swarm C-002@55`, baseline `E-swarm-20261118-1aa2`.                                                                                                 |
+| Trial                     | `swarm C-002@55`, baseline `E-swarm-20261118-e3d0`.                                                                                                 |
 | Triệu chứng               | Lab 8 FAIL `status resolved != denied`; ledger 20.000đ thay vì 0đ; swarm không ghi event reply.                                                     |
 | Bước sai đầu tiên         | Event 3 `model_override {"delay_days": 5}`; DB ghi 2 ngày.                                                                                          |
 | Vì sao là bước *đầu tiên* | Event 1 handoff và event 2 lookup đúng phạm vi; event 3 mới thay DB bằng ticket, event 4 quote sai.                                                 |
